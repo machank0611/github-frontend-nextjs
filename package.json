@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest --watch"
+    "test": "jest --ci --passWithNoTests",
+    "test:watch": "jest --watch",
+    "build": "next build"
   },
   "dependencies": {
     "next": "15.3.4",
